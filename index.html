@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apache Server Welcome</title>
+    <title>Apache Server+Youngstorage</title>
+    <link rel="icon" type="image/png" href="yslogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
@@ -18,6 +21,8 @@
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
             position: relative;
+            font-family: 'Montserrat', sans-serif;
+
         }
         @keyframes gradientAnimation {
             0% { background-position: 0% 50%; }
@@ -37,6 +42,7 @@
             position: relative;
             z-index: 1;
             animation: lightSpeedIn 2s ease-out;
+            
         }
         @keyframes lightSpeedIn {
             from { transform: translateX(100%) skewX(-30deg); opacity: 0; }
@@ -95,13 +101,22 @@
           to { opacity: 1; }
       } 
         .welcome-text {
-            font-size: 2.5em;
+            font-size: 2em;
             white-space: nowrap;
             overflow: hidden;
             color: #FFFFFF; 
             width: 0;
             animation: typing 3s steps(30, end) forwards;
             animation-delay: 3.5s;
+        }
+        .welcome-text span{
+          font-weight: 600;
+          white-space: nowrap;
+          overflow: hidden;
+          color:crimson; 
+          width: 0;
+          animation: typing 3s steps(30, end) forwards;
+          animation-delay: 3.5s;
         }
         @keyframes typing {
             from { width: 0; }
@@ -137,7 +152,7 @@
             <div class="symbol">+</div>
             <img src="yslogo.png" alt="Logo 2" class="logo-2">
         </div>
-        <div class="welcome-text">Welcome to Apache Server</div>
+        <div class="welcome-text">Welcome to <span>Apache Server</span></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/ripple-js@1.2.1/ripple.min.js"></script>
     <script>
